@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.mkyong.navi</groupId>
+	<artifactId>WicketNavigation</artifactId>
+	<packaging>war</packaging>
+	<version>1.0-SNAPSHOT</version>
+	<name>WicketNavigation</name>
+	<url>http://maven.apache.org</url>
+
+	<dependencies>
+<!-- 
+		<dependency>
+			<groupId>org.apache.wicket</groupId>
+			<artifactId>wicket</artifactId>
+			<version>1.4.17</version>
+		</dependency>
+		 -->
+		 <dependency>
+    <groupId>org.apache.wicket</groupId>
+    <artifactId>wicket-core</artifactId>
+    <version>6.0.0</version>
+</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.wicket/wicket-examples -->
+<!-- https://mvnrepository.com/artifact/org.apache.wicket/wicket-examples -->
+<!-- <dependency>
+    <groupId>org.apache.wicket</groupId>
+    <artifactId>wicket-examples</artifactId>
+    <version>8.0.0</version>
+</dependency> -->
+
+
+		
+
+<!-- 	<dependency>
+		<groupId>org.apache.wicket</groupId>
+		<artifactId>wicket-core</artifactId>
+		<version>8.0.0</version>
+	</dependency> -->
+
+		<!-- slf4j-log4j -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.6.5</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<finalName>WicketNavigation</finalName>
+		<plugins>
+			<plugin>
+				<inherited>true</inherited>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<optimise>true</optimise>
+					<debug>true</debug>
+				</configuration>
+			</plugin>
+		</plugins>
+		
+	<resources>
+        <resource>
+            <filtering>false</filtering>
+            <directory>src/main/resources</directory>
+        </resource>
+        <resource>
+            <filtering>false</filtering>
+            <directory>src/main/java</directory>
+            <includes>
+                <include>**</include>
+            </includes>
+            <excludes>
+                <exclude>**/*.java</exclude>
+            </excludes>
+        </resource>
+    </resources>
+	</build>
+	
+<!-- 	<repositories>
+		<repository>
+			<id>Apache Nexus</id>
+			<url>https://repository.apache.org/content/repositories/snapshots/</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+			</snapshots>
+		</repository>
+	</repositories> -->
+</project>
