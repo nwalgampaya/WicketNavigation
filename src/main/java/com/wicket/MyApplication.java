@@ -1,3 +1,4 @@
+package com.wicket;
 /*package com.mkyong;
 
 import org.apache.wicket.Page;

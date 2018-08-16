@@ -1,4 +1,4 @@
-package com.mkyong.hello;
+package com.wicket.hello;
 
 import org.apache.wicket.markup.html.border.Border;
 import org.apache.wicket.markup.html.border.BoxBorder;

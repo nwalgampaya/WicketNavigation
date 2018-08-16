@@ -1,4 +1,4 @@
-package com.mkyong.hello;
+package com.wicket.hello;
 
 import org.apache.wicket.Page;
 //import org.apache.wicket.examples.WicketExampleApplication;
